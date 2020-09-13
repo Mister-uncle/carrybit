@@ -1,0 +1,181 @@
+.w{
+    width: 1140px;
+}
+.l{
+    float: left;
+}
+.r{
+    float: right;
+}
+a{
+    text-decoration: none;
+    color:#777777;
+}
+a:hover{
+    text-decoration: none;
+    color:#fd6633;
+}
+ul{
+    list-style: none;
+}
+/*清除浮动*/
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+.head{
+    height: 100px;
+    margin: 0 auto;
+    margin-top:50px;
+}
+.logo{
+    margin: 20px 0;
+    height: 50px;
+}
+.logo img{
+    width: 200px;
+}
+.search{
+    margin: 40px 300px 35px 0px;
+}
+.search input{
+    height: 40px;
+    width: 400px;
+    border: 1px solid #ececed;
+    padding: 5px;
+    color: #777777;
+    border-right: none;
+}
+.search button{
+    background-color: #fd6633;
+    color: white;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    width: 70px;
+    margin-left: -3px;
+
+}
+.lunbo{
+    margin: 0 auto;
+}
+.gongneng{
+    /*background-color: pink;*/
+    height: 50px;
+    margin: 0 auto;
+
+}
+
+.gongneng li{
+    float: left;
+}
+.gongneng li a{
+    display: block;
+
+    margin-right: 50px;
+    font-size: 16px;
+}
+.mt{
+    margin-top: -6px;
+}
+
+/*container*/
+.m_container{
+    margin: 0 auto;
+    height: 500px;
+    background-color: pink;
+}
+
+/*footer*/
+.footer{
+    margin: 20px auto;
+    background-color: #efeff0;
+
+}
+.mod_service{
+    margin: 20px auto;
+    height: 100px;
+    border-bottom: 1px solid #bfbfc0;
+    padding: 10px 0 ;
+}
+.mod_service ul{
+    width: 1500px;
+    overflow: hidden;
+}
+.mod_service li{
+    float: left;
+    margin-right: 61px;
+    margin-left: -40px;
+    width: 269px;
+    height: 100px;
+}
+.mod_service .ser_l{
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+}
+.mod_service .ser_r{
+    width: 169px;
+    height: 100px;
+}
+
+.mod_help{
+    border-bottom: 1px solid #bfbfc0;
+    overflow: hidden;
+}
+.mod_help_item{
+    margin: 20px 100px 20px 30px;
+}
+.app{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin-right: 65px;
+    margin-top: 10px;
+
+}
+.mod_help_item dd{
+    margin: 10px 0;
+}
+.mod_copyright{
+    text-align: center;
+    margin-top: 20px;
+}
+/*footer*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
