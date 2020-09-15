@@ -6,6 +6,7 @@
     <title>健康医院</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/base.css">
 </head>
 <body>
 <!--导航-->
@@ -34,12 +35,12 @@
 </nav>
 <!--导航-->
 
-<div class="head w">
+<div class="w head" id="head">
     <div class="logo l">
         <img src="images/logo.png" alt="" >
     </div>
     <div class="r search">
-        <input type="text" value="体检预约">
+        <input type="text" value="体检预约" class="searchinput">
         <button>搜索</button>
     </div>
 </div>
@@ -88,7 +89,105 @@
 <!--轮播图-->
 
 <div class="m_container w">
+    <div class="m_con_top">
+        <h4>健康头条</h4>
+        <div class="r">
+            <a href="">养生</a>
+            <a href="">减肥</a>
+            <a href="">美食</a>
+            <a href="">美容</a>
+            <a href="">慢病</a>
+            <a href="">育儿</a>
+            <a href="">情感</a>
+            <a href="">社会</a>
+        </div>
+    </div>
+    <div class="m_con_detail">
+        <ul>
+            <li>
+                <a href="">
+                    <div class="m_con_detail_img l">
+                        <img src="images/img1.png" height="392" width="523"/></div>
+                    <div class="m_con_detail_text r">
+                        <p>这类食物吃的越多，皮肤老化得越快！赶紧戒了！</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="m_con_detail_img l">
+                        <img src="images/img5.png" height="392" width="523"/></div>
+                    <div class="m_con_detail_text r">
+                        <p>脑梗的诱因被揪出来了，忌口4种食物，越少吃血管越干净</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="m_con_detail_img l">
+                        <img src="images/img2.png" height="392" width="523"/></div>
+                    <div class="m_con_detail_text r">
+                        <p>想要减肥又怕累？这份懒人减肥法，让你轻松变瘦</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="m_con_detail_img l">
+                        <img src="images/img3.png" height="392" width="523"/></div>
+                    <div class="m_con_detail_text r">
+                        <p>名医们的美容养颜秘方，女人们要收藏哦！30岁用也来得及</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="m_con_detail_img l">
+                        <img src="images/img4.png" height="392" width="523"/></div>
+                    <div class="m_con_detail_text r">
+                        <p>成天喝着泡枸杞，但你真的了解它吗？ </p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="m_con_detail_img l">
+                        <img src="images/img6.png" height="392" width="523"/></div>
+                    <div class="m_con_detail_text r">
+                        <p>马齿苋捣烂外敷在脸上、身上，能治多种难缠疾病，用过的都说好</p>
+                    </div>
+                </a>
+            </li>
 
+            <li>
+                <a href="">
+                    <div class="m_con_detail_img l">
+                        <img src="images/img6.png" height="392" width="523"/></div>
+                    <div class="m_con_detail_text r">
+                        <p>马齿苋捣烂外敷在脸上、身上，能治多种难缠疾病，用过的都说好</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="m_con_detail_img l">
+                        <img src="images/img3.png" height="392" width="523"/></div>
+                    <div class="m_con_detail_text r">
+                        <p>名医们的美容养颜秘方，女人们要收藏哦！30岁用也来得及</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="m_con_detail_img l">
+                        <img src="images/img4.png" height="392" width="523"/></div>
+                    <div class="m_con_detail_text r">
+                        <p>成天喝着泡枸杞，但你真的了解它吗？ </p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
 </div>
 
 <div class="footer w">
@@ -132,7 +231,7 @@
 
     <div class="mod_help">
         <div class="mod_help_item l">
-            <dt><a href="">关于爱康</a></dt>
+            <dt><a href="">关于我们</a></dt>
             <dd><a href="">公司介绍</a></dd>
             <dd><a href="">管理团队</a></dd>
             <dd><a href="">愿景 使命 价值观</a></dd>
@@ -176,9 +275,9 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-
 <script src="js/jquery.singlePageNav.min.js"></script>
 <script src="js/wow.min.js"></script>
+<script src="js/index.js"></script>
 <script>
     $(function () {
         $('.nav').singlePageNav({

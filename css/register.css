@@ -1,0 +1,54 @@
+.re_main{
+    height: 1000px;
+    background-color: #f2ccaa;
+    overflow: hidden;
+}
+.re_main_regist{
+    height: 600px;
+    width: 600px;
+    background-color: white;
+    margin: 100px auto;
+    padding: 50px;
+}
+.re_main_regist_title {
+    height: 80px;
+    line-height: 80px;
+    font-size: 20px;
+}
+.re_main_regist_title p{
+    color: #2b2b2c;
+    font-size: 20px;
+}
+.re_main_regist_title_r a:hover{
+    text-decoration: none;
+}
+.input_user{
+    margin: 20px 0;
+}
+.input_password{
+    margin: 20px 0;
+}
+.input_user input,
+.input_password input{
+    height: 50px;
+    width: 400px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

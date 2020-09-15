@@ -1,0 +1,148 @@
+.w {
+    width: 1140px;
+    margin: 0 auto;
+}
+.r{
+    float: right;
+}
+.l{
+    float: left;
+}
+.top{
+    height: 100px;
+    width: 1140px;
+}
+.top p{
+    display: inline-block;
+    line-height: 100px;
+    font-size: 24px;
+}
+.top_logo{
+    height: 100px;
+    width: 200px;
+    line-height: 100px;
+}
+.top_logo img{
+    width: 200px;
+}
+
+.main{
+    height: 600px;
+    background: url("../images/bc1.jpg") no-repeat;
+    background-size: 100%;
+}
+.login {
+    box-shadow: 10px 10px 5px 5px #888888;;
+    width: 400px;
+    height: 400px;
+    background-color: #fdfdfe;
+    margin-right: 15px;
+    margin-top: 80px;
+    padding: 20px;
+    border: 1px solid #e8e5e5;
+    position: relative;
+}
+
+.login_wel{
+    height: 80px;
+    line-height: 80px;
+}
+.login_wel p{
+    font-size: 18px;
+    display: inline-block;
+}
+.login_input_t{
+    height: 40px;
+    margin: 10px;
+    margin-left: 0;
+}
+.login_input_p{
+    height: 40px;
+    margin: 10px;
+    margin-left: 0;
+
+}
+
+.login input{
+    height: 40px;
+    width: 300px;
+    border: 1px solid #e6e6e6;
+    font-size: 18px;
+    color: #a8a7a7;
+    padding: 5px;
+}
+.login .glyphicon{
+    background-color: #777777;
+    height: 40px;
+    width: 40px;
+    margin-top: -8px;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 25px;
+    line-height: 40px;
+    margin-right: -2px;
+}
+.login_but{
+    height: 40px;
+    width: 340px;
+    background-color: #fd6633;
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+.login_help{
+    margin-top: 20px;
+}
+.login_help li{
+    float: right;
+    margin-right: 20px;
+}
+.login_app{
+    width: 48px;
+    height: 47px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background:url("../images/btncode.gif");
+}
+.login_app:hover{
+    background:url("../images/btncode.gif") 48px 0;
+}
+.login_app_cli{
+    background:url("../images/btncode.gif") 0 -47px;
+}
+.footer{
+    margin-top: 20px;
+    text-align: center;
+    color: #777777;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
