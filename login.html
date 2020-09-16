@@ -11,32 +11,34 @@
 
 <div class="top w">
     <div class="top_logo l">
-        <img src="images/logo.png"/>
+        <a href="index.html"><img src="images/logo.png"/></a>
     </div>
     <p>欢迎登录</div>
 </div>
 
 <div class="main w">
-    <div class="login r">
-        <div class="login_wel"><p>会员登录</p></div>
-        <div class="login_input_t">
-            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-            <input type="text" value="请输入账号">
+
+        <div class="login r">
+            <div class="login_wel"><p>会员登录</p></div>
+            <div class="login_input_t">
+                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                <input type="text" id="uid" placeholder="请输入邮箱">
+            </div>
+            <div class="login_input_p">
+                <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
+                <input type="password" id="password" placeholder="请输入登录密码">
+            </div>
+            <button class="login_but" id="loginBtn">登录</button>
+            <div class="login_help r">
+                <ul>
+                    <li><a href="">忘记密码</a></li>
+                    <li><a href="">忘记用户名</a></li>
+                    <li><a href="register.html">免费注册</a></li>
+                </ul>
+            </div>
+            <a href=""><div class="login_app "></div></a>
         </div>
-        <div class="login_input_p">
-            <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
-            <input type="password" value="请输入登录密码">
-        </div>
-            <button class="login_but">登录</button>
-        <div class="login_help r">
-            <ul>
-                <li><a href="">忘记密码</a></li>
-                <li><a href="">忘记用户名</a></li>
-                <li><a href="">免费注册</a></li>
-            </ul>
-        </div>
-        <a href=""><div class="login_app "></div></a>
-    </div>
+
 </div>
 
 <div class="footer w">

@@ -4,11 +4,24 @@
     overflow: hidden;
 }
 .re_main_regist{
+    flex: 1;
+    overflow: hidden;
     height: 600px;
     width: 600px;
     background-color: white;
     margin: 100px auto;
     padding: 50px;
+}
+.re_main_regist .glyphicon{
+    border: 1px solid #e6e6e6;
+    height: 100%;
+    line-height: 50px;
+    width: 50px;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 20px;
+    margin-right: -3px;
+    border-right: none;
 }
 .re_main_regist_title {
     height: 80px;
@@ -24,18 +37,39 @@
 }
 .input_user{
     margin: 20px 0;
+    height: 57px;
 }
-.input_password{
-    margin: 20px 0;
+.input_user input{
+    height: 100%;
+    width: 440px;
+    color: #777777;
+    font-size: 18px;
+    padding: 0 3px;
+    border: 1px solid #e6e6e6;
+    margin-top: 2px;
 }
-.input_user input,
-.input_password input{
-    height: 50px;
-    width: 400px;
-
+.re_main_regist_bot{
+    height: 40px;
+    font-size: 18px;
 }
-
-
+.re_main_regist_bot input{
+    height: 18px;
+    width: 18px;
+    vertical-align: top;
+    margin-top: 4px;
+    margin-right: 4px;
+}
+.re_regist{
+    background-color: #7f7f80;
+    color: white;
+    font-size: 22px;
+    border: none;
+    width: 490px;
+    height: 60px;
+}
+.re_regist_c{
+    background-color: #fd6633;
+}
 
 
 
