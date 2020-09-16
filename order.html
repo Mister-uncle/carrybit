@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/person.css">
+    <link rel="stylesheet" href="css/order.css">
 </head>
 <body>
 <!--导航-->
@@ -55,7 +56,7 @@
     <div class="contain_l l">
         <div class="contain_l_home">
             <a href="person.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-            <p>我的爱康</p></a>
+                <p>我的爱康</p></a>
         </div>
         <div class="contain_l_list">
             <ul>
@@ -97,37 +98,52 @@
 
     <div class="contain_r r">
         <div class="contain_r_t">
-            <div class="contain_r_head"></div>
-            <p>爱康用户，您好 <br/> 欢迎进入我的爱康</p>
+            <p>我的订单</p>
         </div>
         <div class="contain_r_b">
-            <div class="contain_r_bEnter">
-                <p>服务入口</p>
-            </div>
-            <div class="contain_r_bServe">
-                <ul>
-                    <li><a href="">
-                        <div><img src="images/exam1.png" /></div>
-                        <p>体检预约</p>
-                    </a></li>
-                    <li><a href="">
-                        <div><img src="images/exam2.png" /></div>
-                        <p>齿科预约</p>
-                    </a></li>
-                    <li><a href="">
-                        <div><img src="images/exam3.png" /></div>
-                        <p>报告查询</p>
-                    </a></li>
-                </ul>
-            </div>
-
-            <div class="contain_r_bHelp">
-                <p>Q：如何添加优惠券？</p>
-                <p>A：进入“我的”页面，点击顶部区域的“优惠券”-->“我的优惠券”-->按要求输入“优惠券编码”-->点击【添加】。</p>
-                <p>Q：优惠券如何使用？</p>
-                <p>A：在“确认信息”页面，选择使用优惠券-->“选择优惠券”页面，勾选您本次预约订单要使用的优惠券即可。</p>
-                <p>Q：取消订单后，使用的优惠券会退回吗？</p>
-                <p>A：您取消订单执行退款操作后，该订单使用的优惠券会自动退回至您的账户，您下次可以重新使用。</p>
+            <ul class="nav nav-tabs">
+                <li role="presentation" class="active"><a href="#">体检订单</a></li>
+                <li role="presentation"><a href="#">齿科订单</a></li>
+                <li role="presentation"><a href="#">Watson订单</a></li>
+                <li role="presentation"><a href="#">血糖订单</a></li>
+            </ul>
+        </div>
+        <div class="contain_r_order">
+            <div class="bs-example" data-example-id="hoverable-table">
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th>姓名</th>
+                        <th>套餐名称</th>
+                        <th>医院名称</th>
+                        <th>购买日期</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>入职体检</td>
+                        <td>重庆西南医院</td>
+                        <td>2020-9-16 11:32</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Mark</td>
+                        <td>商务体检</td>
+                        <td>新桥医院</td>
+                        <td>2020-9-16 11:32</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Mark</td>
+                        <td>健康体检</td>
+                        <td>大坪医院</td>
+                        <td>2020-9-16 11:32</td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

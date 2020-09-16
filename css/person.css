@@ -55,26 +55,86 @@ body{
     font-size: 18px;
     font-weight: bold;
 }
-
+.contain_l_home:hover{
+    background-color: #fd6633;
+}
+.contain_l_home:hover p{
+    color: #ffffff;
+}
+.contain_l_home:hover .glyphicon{
+    color: white;
+}
 .contain_r{
-    height: 580px;
     width: 920px;
 }
 .contain_r_t{
     width: 920px;
-    height: 100px;
-    background-color: white;
+    height: 150px;
     margin-bottom: 20px;
-    padding: 40px;
-    font-size: 14px;
-    font-weight: bold;
-    color: black;
+    background: linear-gradient(to right, #a86b6b, #d6a891, #a96c6c);
+}
+.contain_r_t p{
+    display: inline-block;
+    float: left;
+    color: white;
+    font-size: 16px;
+    margin-top: 40px;
+}
+.contain_r_head{
+    width: 90px;
+    height: 90px;
+    background-color: pink;
+    float: left;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 50%;
+    background: url("../images/head.png") no-repeat;
 }
 .contain_r_b{
     margin-top: 20px;
-    height: 480px;
-    background-color: white;
+    background-color: #ffffff;
+    padding: 20px;
 }
+.contain_r_bEnter p{
+    display: inline-block;
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    height: 30px;
+}
+.contain_r_bServe ul{
+    width: 1500px;
+    overflow: hidden;
+}
+.contain_r_bServe li{
+    margin-right: 50px;
+    width: 265px;
+    height: 200px;
+    float: left;
+    text-align: center;
+}
+.contain_r_bServe li:last-child{
+    border-right: none;
+
+}
+.contain_r_bServe li p{
+    font-size: 18px;
+    color: #6c6a6a;
+}
+.contain_r_bServe li div{
+    height: 90px;
+    width: 270px;
+    margin-top: 20px;
+    border-right: 1px solid #e8ebec;
+}
+.contain_r_bHelp{
+    height: 300px;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+
 .footer{
     background-color: white;
 }
