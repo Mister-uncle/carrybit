@@ -72,7 +72,7 @@ ul{
     /*background-color: pink;*/
     height: 50px;
     margin: 0 auto;
-
+    position: relative;
 }
 
 .gongneng li{
@@ -83,6 +83,29 @@ ul{
 
     margin-right: 50px;
     font-size: 16px;
+}
+.goods_info{
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    z-index: 999;
+    margin-top: 23px;
+    transition: height 0.3s;
+    height: 228px;
+}
+.function_reser:hover ~ .goods_info,
+.goods_info:hover{
+    height: 228px;
+    box-shadow: 0 0 3px 0 #f6f6f7;
+}
+.goods_info li{
+    background-color: pink;
+    height: 30px;
+    width: 100px;
+    margin-top: 30px;
+    float: left;
+    margin-right: 50px;
+
 }
 .mt{
     margin-top: -6px;
