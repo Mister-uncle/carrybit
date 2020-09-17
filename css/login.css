@@ -27,16 +27,18 @@
 }
 
 .main{
-    height: 600px;
-    background: url("../images/bc1.jpg") no-repeat;
+    height: 900px;
+    background: url("../images/login_bg1.jpg") no-repeat;
     background-size: 100%;
+    width: 1500px;
+    margin: 0 auto;
 }
 .login {
     box-shadow: 10px 10px 5px 5px #888888;;
     width: 400px;
     height: 400px;
     background-color: #fdfdfe;
-    margin-right: 15px;
+    margin-right: 123px;
     margin-top: 80px;
     padding: 20px;
     border: 1px solid #e8e5e5;

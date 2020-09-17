@@ -77,6 +77,7 @@ ul{
 
 .gongneng li{
     float: left;
+    height: 50px;
 }
 .gongneng li a{
     display: block;
@@ -85,27 +86,46 @@ ul{
     font-size: 16px;
 }
 .goods_info{
-    width: 100%;
+    width: 534px;
     background-color: white;
     position: absolute;
     z-index: 999;
-    margin-top: 23px;
-    transition: height 0.3s;
-    height: 228px;
+    margin-top: 30px;
+    /*transition: height 0.3s;*/
+    height: 0px;
+    /*display: none;*/
 }
-.function_reser:hover ~ .goods_info,
+.function_reser:hover ~ .goods_info ,
 .goods_info:hover{
-    height: 228px;
-    box-shadow: 0 0 3px 0 #f6f6f7;
+    height: 281px;
+    box-shadow: -2px -2px 4px 2px rgb(237, 237, 239);
+    backdrop-filter: blur(4px);
+}
+.function_reser:hover ~ .goods_info ul,
+.goods_info:hover ul{
+    display: block;
+}
+.goods_info ul{
+    width: 600px;
+    overflow: hidden;
+    display: none;
 }
 .goods_info li{
-    background-color: pink;
-    height: 30px;
-    width: 100px;
-    margin-top: 30px;
+    height: 50px;
+    width: 154px;
+    margin-top: 16px;
     float: left;
-    margin-right: 50px;
-
+    margin-right: 26px;
+    margin-left: 10px;
+}
+.goods_info li img{
+    height: 40px;
+    margin-top: 5px;
+}
+.goods_info li p{
+    display: block;
+    float: left;
+    line-height: 50px;
 }
 .mt{
     margin-top: -6px;
