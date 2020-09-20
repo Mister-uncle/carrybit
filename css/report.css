@@ -1,0 +1,50 @@
+p,
+span {
+  color: #777777;
+  margin: 0;
+}
+.contain .contain_r {
+  width: 920px;
+  background-color: white;
+}
+.contain .contain_r tr {
+  width: 200px;
+  height: 50px;
+}
+.contain .contain_r th {
+  text-align: center;
+  font-size: 16px;
+  width: 200px;
+}
+.contain .contain_r td {
+  text-align: center;
+  font-size: 16px;
+  width: 200px;
+}
+.contain .contain_r .contain_r_reportBox {
+  width: 920px;
+  height: 135px;
+  border: 2px solid black;
+  border-top: none;
+  margin-top: -10px;
+}
+.contain .contain_r .contain_r_reportBox li {
+  width: 458px;
+  height: 40px;
+  float: left;
+  line-height: 40px;
+  padding: 0 30px;
+}
+.contain .contain_r .contain_r_reportBox li div {
+  margin-right: 5px;
+  font-size: 16px;
+}
+.contain .contain_r .contain_r_reportBox li div p {
+  display: inline-block;
+}
+.contain .contain_r .contain_r_testIn,
+.contain .contain_r .contain_r_testOut,
+.contain .contain_r .contain_r_testEye {
+  border-top: none;
+}
+/*# sourceMappingURL=report.css.map */
