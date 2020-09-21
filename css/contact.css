@@ -1,0 +1,45 @@
+.conta_main {
+  height: 1500px;
+  width: 100%;
+  background: url("../images/contactBg.png") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  z-index: -999;
+  opacity: 0.6;
+  position: absolute;
+}
+.conta_mainContent {
+  background-color: white;
+  margin-top: 50px;
+  text-align: center;
+  opacity: 0.6;
+}
+.conta_mainContent p {
+  display: inline-block;
+  margin-right: 25px;
+}
+.conta_mainMap {
+  background-color: white;
+  opacity: 0.8;
+  padding: 30px;
+}
+.conta_mainMap li {
+  margin-top: 30px;
+}
+.conta_mainMap .conta_mainMapImg {
+  width: 440px;
+  background-color: pink;
+  opacity: 1;
+  margin-right: 50px;
+}
+.conta_mainMap .conta_mainMapImg img {
+  width: 100%;
+}
+.conta_mainMap div:last-child li {
+  margin-top: 20px;
+}
+.footer {
+  margin-top: 10px;
+}
+/*# sourceMappingURL=contact.css.map */

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/person.css">
+    <link rel="stylesheet" href="css/information.css">
+</head>
+<body>
+<!--导航-->
+<div id="page1"></div>
+<!--导航-->
+
+<!--头部-->
+<div id="page2"></div>
+<!--头部-->
+
+<div class="contain w clearfix">
+    <!--    左边栏-->
+    <div id="page3"></div>
+    <!--    左边栏-->
+
+    <div class="contain_r r">
+        <div class="contain_r_t">
+            <p>我的信息</p>
+        </div>
+        <div class="contain_r_b clearfix">
+            <div class="contain_r_bL l">
+                <ul>
+                    <li>姓名：</li>
+                    <li>身份证号码：</li>
+                    <li>联系电话：</li>
+                    <li>家庭住址：</li>
+                    <li>性别：</li>
+                    <li>出生日期：</li>
+
+                </ul>
+            </div>
+            <div class="contain_r_bR l">
+                <ul>
+                    <li><input class="inputw100" type="text"></li>
+                    <li><input type="text"></li>
+                    <li><input class="inputw150" type="text"></li>
+                    <li><input class="inputw400" type="text"></li>
+                    <li>
+                        <button>男</button>
+                        <button>女</button>
+                    </li>
+                    <li><input type="text"></li>
+
+                    <button class="mt20">保存</button>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--footer-->
+<div id="page4"></div>
+<!--footer-->
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.singlePageNav.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/index.js"></script>
+<script>
+    $("#page1").load("publicHtml/nav.html");
+    $("#page2").load("publicHtml/person_head.html");
+    $("#page3").load("publicHtml/person_side.html");
+    $("#page4").load("publicHtml/footer.html");
+</script>
+
+</body>
+
+</html>

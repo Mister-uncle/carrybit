@@ -16,6 +16,9 @@ span {
   font-size: 16px;
   width: 200px;
 }
+.contain .contain_r .th_textSign {
+  text-align: left;
+}
 .contain .contain_r td {
   text-align: center;
   font-size: 16px;
@@ -46,5 +49,23 @@ span {
 .contain .contain_r .contain_r_testOut,
 .contain .contain_r .contain_r_testEye {
   border-top: none;
+}
+.contain .contain_r button {
+  float: right;
+  border: 1px solid #fd6633;
+  width: 80px;
+  height: 30px;
+  background-color: white;
+  color: #fd6633;
+  margin-top: 15px;
+  margin-right: 420px;
+  box-shadow: 0 0 5px #929395;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.contain .contain_r button:hover {
+  background-color: #fd6633;
+  color: white;
+  box-shadow: 0 0 15px #929395;
 }
 /*# sourceMappingURL=report.css.map */

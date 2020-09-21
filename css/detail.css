@@ -163,10 +163,11 @@
   width: 80px;
   height: 30px;
   background-color: white;
-  color: black;
+  color: #fd6633;
   margin-top: 15px;
   margin-right: 166px;
   box-shadow: 0 0 5px #929395;
+  font-size: 16px;
 }
 .de_intro_compare .de_intro_comBot .de_intro_comBotBuy button:hover {
   background-color: #fd6633;

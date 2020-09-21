@@ -1,0 +1,78 @@
+.contain_r_t {
+  background: white;
+  height: 90px;
+}
+.contain_r_t p {
+  color: black;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 20px;
+}
+.contain_r_b {
+  width: 920px;
+  background-color: white;
+  padding: 20px;
+}
+.contain_r_b input {
+  border: 1px solid #fd6633;
+}
+.contain_r_b .contain_r_bL {
+  text-align: right;
+}
+.contain_r_b .contain_r_bL li {
+  color: black;
+  font-weight: bold;
+}
+.contain_r_b li {
+  margin-top: 20px;
+  font-size: 16px;
+  height: 30px;
+  line-height: 30px;
+}
+.contain_r_b .contain_r_bR ul li ~ button:last-child {
+  float: right;
+  border: 1px solid #fd6633;
+  width: 110px;
+  height: 35px;
+  background-color: white;
+  color: #fd6633;
+  margin-top: 30px;
+  margin-right: 320px;
+  box-shadow: 0 0 5px #929395;
+  font-size: 16px;
+}
+.contain_r_b .contain_r_bR ul li ~ button:last-child:hover {
+  background-color: #fd6633;
+  color: white;
+  box-shadow: 0 0 15px #929395;
+}
+.contain_r_b .contain_r_bR input {
+  height: 30px;
+  padding: 0 10px;
+}
+.contain_r_b .contain_r_bR .inputw100 {
+  width: 100px;
+}
+.contain_r_b .contain_r_bR .inputw150 {
+  width: 150px;
+}
+.contain_r_b .contain_r_bR .inputw400 {
+  width: 400px;
+}
+.contain_r_b .contain_r_bR button {
+  border: 1px solid #fd6633;
+  width: 80px;
+  height: 30px;
+  background-color: white;
+  color: black;
+  margin-right: 20px;
+  font-size: 16px;
+}
+.contain_r_b .contain_r_bR button:hover {
+  background-color: #fd6633;
+  color: white;
+}
+.mt20 {
+  margin-top: 20px;
+}
+/*# sourceMappingURL=information.css.map */
