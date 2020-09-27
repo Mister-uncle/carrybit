@@ -36,7 +36,6 @@ a {
 }
 
 a:hover {
-    color: #fd6633;
     text-decoration: none;
 }
 a:visited,a:link,a:active{
