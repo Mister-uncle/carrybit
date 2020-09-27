@@ -3,11 +3,9 @@ $(function () {
     let li = $(".togleDesk");
     //商品左侧栏点击后切换li状态和内容区的显示li
     lis.on("click",function () {
-        $(this).addClass('current');
-        $(this).siblings().removeClass('current');
+        $(this).addClass('current').siblings().removeClass('current');
         var index = $(this).index();
-        li.eq(index).removeClass("deskActive");
-        li.eq(index).siblings().addClass("deskActive");
+        li.eq(index).removeClass("deskActive").siblings().addClass("deskActive");
     })
     //顶部导航切换效果，以及左侧显示内容
     let topli = $(".topCenter li");
@@ -16,8 +14,7 @@ $(function () {
         $(this).addClass("current");
         $(this).siblings().removeClass("current");
         var index = $(this).index();
-        side.eq(index).show();
-        side.eq(index).siblings().hide();
+        side.eq(index).show().siblings().hide();
     })
 
     let condiv = $(".content_side");
@@ -26,14 +23,13 @@ $(function () {
         $(this).addClass("current");
         $(this).siblings().removeClass("current");
         var index = $(this).index()+3;
-        li.eq(index).removeClass("deskActive");
-        li.eq(index).siblings().addClass("deskActive");
+        li.eq(index).removeClass("deskActive").siblings().addClass("deskActive");
     })
 
-    //顶部标签功能
+    //顶部标签与侧边菜单联动功能
     let contentSideLis = $(".content_side li");
     let contentTopUl = $(".content_rightTop ul");
-
+    //给侧边菜单绑定点击事件
     contentSideLis.on("click",function () {
         let index = $(this).attr("data-index")
         let topul = $(".content_rightTop ul li");
@@ -42,42 +38,49 @@ $(function () {
         topul.each(function () {
             let topulindex = $(this).attr("data-index");
             if(topulindex === index){
-                $(this).addClass("topActive");
-                $(this).siblings().removeClass("topActive");
+                $(this).addClass("topActive").siblings().removeClass("topActive");
                 flag = true;
             }
         });
         if(flag){
-            $(this).addClass("current");
-            $(this).siblings().removeClass("current");
+            $(this).addClass("current").siblings().removeClass("current");
             return false;
         }
-        contentTopUl.append("<li><a href=\"javascript:\"></a><span class=\"glyphicon glyphicon-remove\"></span></li>");
+        contentTopUl.append("<li><a href=\"javascript:\"></a><span class=\"glyphicon glyphicon-remove topremove\"></span></li>");
         let lastChild = $(".content_rightTop li:last-child");
         lastChild.attr("data-index",$(this).attr("data-index"));
         $(".content_rightTop li:last-child a").html($(this).text());
 
+        //给标签栏绑定点击事件
         $(".content_rightTop li").on("click",function () {
             $(this).addClass("topActive");
             $(this).siblings().removeClass("topActive");
             let index =  $(this).attr("data-index");
-            li.eq(index).removeClass("deskActive");
-            li.eq(index).siblings().addClass("deskActive");
+            let toptext = $(this).text();
+            li.eq(index).removeClass("deskActive").siblings().addClass("deskActive");
 
             contentSideLis.each(function () {
-                if(index === $(this).attr("data-index")){
-                    $(this).addClass("current");
-                    $(this).siblings().removeClass("current");
+                if(index === $(this).attr("data-index") && $(this).text() === toptext){
+                    $(this).addClass("current").siblings().removeClass("current");
                     return false;
                 }
             })
         });
         lastChild.click();
-
-
     });
 
+    $(".content_rightTop").on("click",".topActive span.topremove",function () {
+        // let pindex = $(this).parent().attr("data-index");
 
+        $(this).parent().prev().click();
+        $(this).parent().remove();
+
+
+
+
+
+
+    })
 
 
 
