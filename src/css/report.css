@@ -24,6 +24,10 @@ span {
   font-size: 16px;
   width: 200px;
 }
+.contain .contain_r .edit:hover {
+  border-color: black;
+  box-shadow: 3px 3px 5px #d5d2d2;
+}
 .contain .contain_r .contain_r_reportBox {
   width: 920px;
   height: 135px;

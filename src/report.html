@@ -28,58 +28,24 @@
         <table border="2" class="contain_r_report">
             <tr>
                 <th>姓名</th>
-                <td>Mark</td>
+                <td id="name" class="edit">Mark</td>
                 <th>性别</th>
-                <td>男</td>
+                <td id="sex" class="edit">男</td>
                 <th>出生年月</th>
-                <td>1999-8-18</td>
+                <td id="birth" class="edit">1999-8-18</td>
 
             </tr>
             <tr>
                 <th>身份证号码</th>
-                <td colspan="2">500103199908181121</td>
+                <td colspan="2" id="Uid" class="edit">500103199908181121</td>
                 <th>联系电话</th>
-                <td colspan="2">13370702992</td>
+                <td colspan="2" id="phone" class="edit">13370702992</td>
             </tr>
             <tr>
                 <th>家庭住址</th>
-                <td colspan="5">重庆市渝中区交通街</td>
+                <td colspan="5" id="adress" class="edit">重庆市渝中区交通街</td>
             </tr>
         </table>
-
-        <div class="contain_r_reportBox">
-            <ul>
-                <li>
-                    <div class="l"><p>精神病</p></div>
-                    <div class="r"><p>无</p> <input type="checkbox"></div>
-                    <div class="r"><p>有</p> <input type="checkbox"></div>
-                </li>
-                <li>
-                    <div class="l"><p>癫痫病</p></div>
-                    <div class="r"><p>无</p> <input type="checkbox"></div>
-                    <div class="r"><p>有</p> <input type="checkbox"></div>
-                </li>
-                <li>
-                    <div class="l"><p>吸食毒品史</p></div>
-                    <div class="r"><p>无</p> <input type="checkbox"></div>
-                    <div class="r"><p>有</p> <input type="checkbox"></div>
-                </li>
-                <li>
-                    <div class="l"><p>心脏病</p></div>
-                    <div class="r"><p>无</p> <input type="checkbox"></div>
-                    <div class="r"><p>有</p> <input type="checkbox"></div>
-                </li><li>
-                <div class="l"><p>尿毒症</p></div>
-                <div class="r"><p>无</p> <input type="checkbox"></div>
-                <div class="r"><p>有</p> <input type="checkbox"></div>
-            </li>
-                <li>
-                    <div class="l"><p>慢性咽炎</p></div>
-                    <div class="r"><p>无</p> <input type="checkbox"></div>
-                    <div class="r"><p>有</p> <input type="checkbox"></div>
-                </li>
-            </ul>
-        </div>
 
         <table border="2" class="contain_r_testIn">
             <tr>
@@ -171,8 +137,6 @@
                 <th class="th_textSign">签字：</th>
             </tr>
         </table>
-
-        <button>提交</button>
     </div>
 </div>
 
@@ -187,6 +151,8 @@
 <script src="js/jquery.singlePageNav.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/index.js"></script>
+<script src="js/report.js"></script>
+
 <script>
     $("#page1").load("publicHtml/nav.html");
     $("#page2").load("publicHtml/person_head.html");

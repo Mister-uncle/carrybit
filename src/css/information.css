@@ -14,13 +14,16 @@
   padding: 20px;
 }
 .contain_r_b input {
-  border: 1px solid #fd6633;
+  border: 1px solid rgba(191, 184, 182, 0.3);
+}
+.contain_r_b input:hover {
+  border: 1px solid rgba(191, 184, 182, 0.9);
 }
 .contain_r_b .contain_r_bL {
   text-align: right;
 }
 .contain_r_b .contain_r_bL li {
-  color: black;
+  color: rgba(0, 0, 0, 0.6);
   font-weight: bold;
 }
 .contain_r_b li {
@@ -34,17 +37,17 @@
   border: 1px solid #fd6633;
   width: 110px;
   height: 35px;
-  background-color: white;
-  color: #fd6633;
+  background-color: #fd6633;
+  color: #fff;
   margin-top: 30px;
   margin-right: 320px;
-  box-shadow: 0 0 5px #929395;
+  box-shadow: 0 0 2px #929395;
   font-size: 16px;
 }
 .contain_r_b .contain_r_bR ul li ~ button:last-child:hover {
   background-color: #fd6633;
   color: white;
-  box-shadow: 0 0 15px #929395;
+  box-shadow: 0 0 5px #929395;
 }
 .contain_r_b .contain_r_bR input {
   height: 30px;
@@ -60,7 +63,7 @@
   width: 400px;
 }
 .contain_r_b .contain_r_bR button {
-  border: 1px solid #fd6633;
+  border: 1px solid rgba(253, 102, 51, 0.3);
   width: 80px;
   height: 30px;
   background-color: white;

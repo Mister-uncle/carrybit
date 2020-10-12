@@ -2,6 +2,7 @@
     height: 1000px;
     background-color: #f2ccaa;
     overflow: hidden;
+
 }
 .re_main_regist{
     flex: 1;
@@ -31,6 +32,7 @@
 .re_main_regist_title p{
     color: #2b2b2c;
     font-size: 20px;
+    font-weight: bold;
 }
 .re_main_regist_title_r{
     margin-right: 100px;
@@ -76,12 +78,13 @@
 }
 .password_tag,.input_userEmail_tag,.input_phone_tag,.password_tag_one {
     background-color: rgba(159, 56, 44, 0.73);
-    display: inline-block;
+    display: none;
     padding: 10px;
     margin-left: 20px;
     border-radius: 5px;
     color: white;
 }
+
 .input_user div{
     position: relative;
 }

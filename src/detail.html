@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/detail.css">
+    <link rel="stylesheet" href="public/asserts/vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="public/asserts/vendors/jquery/jquery-ui.min.css">
 </head>
 <body>
 <!--导航-->
@@ -28,15 +30,15 @@
 <div class="gongneng w ">
     <ul>
         <li><a href="index.html">首页</a></li>
-        <li class="function_reser"><a href="">预约</a></li>
+        <li class="function_reser"><a href="detail.html">预约</a></li>
         <li><a href="report.html">查看报告</a></li>
-        <li class="mt"><a href="">在线医生</a></li>
+        <li class="mt"><a href="javascript:">在线医生</a></li>
         <li class="mt"><a href="index.html">健康生活</a></li>
 
         <div class="goods_info">
             <ul>
                 <li>
-                    <a href="">
+                    <a href="javascript:">
                         <div class="l">
                             <img src="images/down1.png" alt="">
                         </div>
@@ -44,7 +46,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="javascript:">
                         <div class="l">
                             <img src="images/down2.jpg" alt="">
                         </div>
@@ -52,7 +54,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="javascript:">
                         <div class="l">
                             <img src="images/down3.jpg" alt="">
                         </div>
@@ -60,7 +62,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="javascript:">
                         <div class="l">
                             <img src="images/down4.jpg" alt="">
                         </div>
@@ -68,7 +70,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="javascript:">
                         <div class="l">
                             <img src="images/down5.jpg" alt="">
                         </div>
@@ -76,7 +78,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="javascript:">
                         <div class="l">
                             <img src="images/down6.jpg" alt="">
                         </div>
@@ -84,7 +86,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="javascript:">
                         <div class="l">
                             <img src="images/down7.jpg" alt="">
                         </div>
@@ -92,7 +94,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="javascript:">
                         <div class="l">
                             <img src="images/down1.png" alt="">
                         </div>
@@ -100,7 +102,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="javascript:">
                         <div class="l">
                             <img src="images/down1.png" alt="">
                         </div>
@@ -121,7 +123,7 @@
             <button>查看计划和定价</button>
             <button>帮助我选择</button>
         </div>
-        <a href="">查看详细信息 ></a>
+        <a href="javascript:">查看详细信息 ></a>
     </div>
 </div>
 
@@ -212,38 +214,64 @@
     </ul>
 </div>
 
-<div class="de_intro_compare w">
-    <div class="de_intro_comTitle clearfix">
-        <div class="de_intro_comTitle_top">
+<div class="de_intro_compare w" id="scrolltop">
+    <div class="de_intro_comTitle clearfix" >
+        <div class="de_intro_comTitle_top" >
             <h3>为你的企业选择合适的生产力解决方案</h3>
             <span>比较各种适合你的企业的计划并从中进行选择。</span>
         </div>
         <div class="de_intro_comTitle_bot">
             <ul>
                 <li>
-                    <h5>¥36.00</h5>
+                    <h5>¥1450.00</h5>
                     <h6>用户/次</h6>
                     <span>本价格含税，用户无需付税</span>
-                    <h4>入职体检 商业基础版</h4>
-                    <button>立即购买</button>
+                    <h4>入职体检 商业高级版</h4>
+                    <button id="btn1">立即购买</button>
                 </li>
                 <li>
                     <h5>¥900.00</h5>
                     <h6>用户/次</h6>
                     <span>本价格含税，用户无需付税</span>
                     <h4>入职体检 商业标准版</h4>
-                    <button>立即购买</button>
+                    <button id="btn2">立即购买</button>
                 </li>
                 <li>
-                    <h5>¥1450.00</h5>
+                    <h5>¥36.00</h5>
                     <h6>用户/次</h6>
                     <span>本价格含税，用户无需付税</span>
-                    <h4>入职体检 商业高级版</h4>
-                    <button>立即购买</button>
+                    <h4>入职体检 商业基础版</h4>
+                    <button id="btn3">立即购买</button>
                 </li>
+
             </ul>
         </div>
     </div>
+    <div class="de_intro_comTitlePro w">
+        <a href="javascript:">
+            <div class="back">
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </div>
+        </a>
+        <div class="de_intro_comTitleProTop">
+            <h2>入职体检 商业基础版</h2>
+        </div>
+        <ul>
+            <li>让您更了解我，才能更需要我</li>
+            <li>检验生化、免疫、肿瘤筛查、重要器官彩超设备</li>
+            <li>本价格含税，用户无需付税</li>
+            <li>《福布斯》中国企业100强</li>
+        </ul>
+        <div class="buy">
+            <div>
+                <h2>$350.00</h2>
+            </div>
+            <div>
+                <button>立即购买</button>
+            </div>
+        </div>
+    </div>
+
 
     <div class="de_intro_comBot">
         <table class="table table-hover">
@@ -347,15 +375,21 @@
             </tbody>
         </table>
         <div class="de_intro_comBotBuy">
-            <button>立即购买</button>
-            <button>立即购买</button>
-            <button>立即购买</button>
+            <a href="javascript:">
+                <button class="but1">立即购买</button>
+            </a>
+            <a href="javascript:">
+                <button class="but2">立即购买</button>
+            </a>
+            <a href="javascript:">
+                <button class="but3" data-index="3">立即购买</button>
+            </a>
         </div>
     </div>
 </div>
 
 <div class="de_comments w clearfix">
-    <h3>了解客户对 Microsoft 365 的评价</h3>
+    <h3>了解客户对 我们 的评价</h3>
     <ul>
         <li><img src="images/comment1.png" /></li>
         <li><img src="images/comment2.png" /></li>
@@ -369,10 +403,12 @@
 <!--footer-->
 
 <script src="js/jquery.min.js"></script>
+<script src="public/asserts/vendors/jquery/jquery-ui.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.singlePageNav.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/index.js"></script>
+<script src="js/detail.js"></script>
 
 <script>
     $(function () {

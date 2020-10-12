@@ -94,6 +94,52 @@
 }
 .de_intro_compare {
   margin-bottom: 200px;
+  position: relative;
+  overflow: hidden;
+}
+.de_intro_compare .de_intro_comTitlePro {
+  height: 350px;
+  border-color: white;
+  box-shadow: 2px 2px 20px #777777;
+  padding: 30px;
+  position: relative;
+  top: -49px;
+  left: 1150px;
+  background-color: white;
+  display: none;
+  margin: -150px 0;
+}
+.de_intro_compare .de_intro_comTitlePro .back {
+  position: absolute;
+  right: 30px;
+  top: 15px;
+  font-size: 30px;
+  color: rgba(253, 102, 51, 0.66);
+}
+.de_intro_compare .de_intro_comTitlePro ul {
+  margin-top: 20px;
+}
+.de_intro_compare .de_intro_comTitlePro ul li {
+  color: black;
+  margin: 10px 25px;
+  list-style-type: disc;
+  font-size: 16px;
+}
+.de_intro_compare .de_intro_comTitlePro .buy {
+  position: absolute;
+  top: 50px;
+  right: 150px;
+}
+.de_intro_compare .de_intro_comTitlePro .buy div {
+  margin: 20px 0;
+}
+.de_intro_compare .de_intro_comTitlePro .buy div button {
+  background-color: #fd6633;
+  color: white;
+  width: 300px;
+  height: 50px;
+  border: none;
+  font-size: 16px;
 }
 .de_intro_compare .de_intro_comTitle {
   text-align: center;
@@ -106,21 +152,21 @@
   background-color: white;
 }
 .de_intro_compare .de_intro_comTitle .de_intro_comTitle_bot li button {
-  border: 1px solid #fd6633;
+  border: 1px solid #fff;
   width: 80px;
   height: 30px;
-  background-color: white;
-  color: black;
+  background-color: #fd6633;
+  color: white;
   margin-top: 15px;
-  box-shadow: 0 0 5px #929395;
+  box-shadow: 0 0 2px #929395;
 }
 .de_intro_compare .de_intro_comTitle .de_intro_comTitle_bot li button:hover {
   background-color: #fd6633;
   color: white;
-  box-shadow: 0 0 15px #929395;
+  box-shadow: 0 0 5px #929395;
 }
 .de_intro_compare .de_intro_comBot {
-  margin-top: 35px;
+  margin-top: 165px;
 }
 .de_intro_compare .de_intro_comBot :last-child tr {
   border-bottom: 1px solid #dddddd;
@@ -159,20 +205,20 @@
 }
 .de_intro_compare .de_intro_comBot .de_intro_comBotBuy button {
   float: right;
-  border: 1px solid #fd6633;
+  border: 1px solid #fff;
   width: 80px;
   height: 30px;
-  background-color: white;
-  color: #fd6633;
+  background-color: #fd6633;
+  color: #fff;
   margin-top: 15px;
   margin-right: 166px;
-  box-shadow: 0 0 5px #929395;
+  box-shadow: 0 0 2px #929395;
   font-size: 16px;
 }
 .de_intro_compare .de_intro_comBot .de_intro_comBotBuy button:hover {
   background-color: #fd6633;
   color: white;
-  box-shadow: 0 0 15px #929395;
+  box-shadow: 0 0 5px #929395;
 }
 .de_comments {
   text-align: center;
