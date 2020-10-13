@@ -90,7 +90,6 @@ $(function () {
     // });
 
     $("#password").on("input",function () {
-
         let password = $(this).val();
         let $reg=/^[a-zA-Z]\w{5,17}$/;
         let repassword = $("#passwordt").val();
@@ -101,7 +100,6 @@ $(function () {
                 $(".password_tag").css("display","none")
             }
         }
-
          if(password.trim().length !== 0){
                 if(!$reg.test(password)){
                 passwordone.css("display","inline-block")
@@ -112,11 +110,6 @@ $(function () {
                  passwordone.css("display","inline-block")
                  passwordone.html("密码不能为空！")
                 }
-
-
-
-
-
     });
 
     $("#passwordt").on("input",function () {
@@ -134,8 +127,6 @@ $(function () {
                     inputrepassword.css("display","inline-block")
                     inputrepassword.html("请输入密码！")
                 }
-
-
     });
     let passwordcheck = function(p){
         let $reg=/^[a-zA-Z]\w{5,17}$/;
@@ -161,7 +152,7 @@ $(function () {
             }
         }else {
             $(".password_tag").css("display","inline-block")
-            $(".password_tag").text('密码格式不正确')
+            $(".password_tag").text('密码不能为空')
         }
     }
 
@@ -213,19 +204,18 @@ $(function () {
                 }
             })
         }
-
-
     })
-
     re_btn.click(function () {
+
         let password = $("#password").val();
         let passwordAgin = $("#passwordt").val();
         let eamil = $("#eamil").val();
 
         let checkedVal = $("#checked").val();
-
+        passwordcheck(password);
+        passwordCheckAgin(passwordAgin);
+        eamilcheck(eamil);
         if(passwordcheck(password) && passwordCheckAgin(passwordAgin) && eamilcheck(eamil)){
-
         }
         return false
 

@@ -13,11 +13,11 @@ $('.login_but').on("click",function () {
     var uid=$('#uid').val();
     var password=$('#password').val();
 
-    if(uid.trim().length==0){
+    if(uid.trim().length === 0){
         alert('请输入邮箱！');
         return;
     }
-    if(password.trim().length == 0){
+    if(password.trim().length === 0){
         alert('请输入密码！');
         return;
     }

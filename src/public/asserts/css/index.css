@@ -36,6 +36,7 @@
 }
 .top .topCenter li:hover a {
   border-bottom: 5px solid #09b3c4;
+  transition: all 0.3s ease-in-out;
 }
 .top .topRight {
   float: right;
@@ -66,12 +67,14 @@
   height: 120px;
   width: 100px;
   display: block;
+  transition: all 0.3s ease-in-out;
 }
 .top .topRight .current {
   border-bottom: 5px solid #09b3c4;
 }
 .top .topRight li:hover a {
   border-bottom: 5px solid #09b3c4;
+  transition: all 0.3s ease-in-out;
 }
 .top .topRight .topRightMenu {
   position: absolute;
@@ -95,6 +98,7 @@
 .top .topRight .topRightMenu a:hover {
   background-color: #09b3c4;
   color: white;
+  transition: all 0.3s ease-in-out;
 }
 .content {
   width: 100%;
@@ -121,6 +125,7 @@
 }
 .content .content_side li:hover {
   background-color: #09b3c4;
+  transition: all 0.3s ease-in-out;
 }
 .content .content_side .content_sideSystem {
   display: none;
@@ -165,9 +170,11 @@
   background-color: #e54040;
   border-radius: 100%;
   color: white;
+  transition: all 0.3s ease-in-out;
 }
 .content .content_right .content_rightTop li:hover {
   background-color: white;
+  transition: all 0.3s ease-in-out;
 }
 .content .content_right .content_rightIndex1 {
   height: 100%;
@@ -203,20 +210,25 @@
 .content .content_right .content_rightIndex1 ul {
   background-color: white;
   overflow: hidden;
+  height: 90px;
 }
 .content .content_right .content_rightIndex1 li {
   width: 25%;
   float: left;
   padding: 0 20px;
+  cursor: default;
 }
 .content .content_right .content_rightIndex1 li div {
   background-color: #f8f8f8;
   padding: 20px;
   height: 80px;
   border-radius: 5px;
+  box-shadow: 1px 1px 3px 1px rgba(203, 176, 167, 0.34);
 }
 .content .content_right .content_rightIndex1 li div:hover {
   background-color: #f0f0f1;
+  box-shadow: 1px 4px 6px 4px rgba(203, 176, 167, 0.34);
+  transition: all 0.3s ease-in-out;
 }
 .content .content_right .content_rightIndex1 li p {
   margin: 0;
@@ -251,6 +263,7 @@
 }
 .content .content_right .content_rightIndex1 .layui-card-body tr:hover {
   background-color: #f2f2f2;
+  transition: all 0.3s ease-in-out;
 }
 .content .content_right .content_rightIndex1 .layui-card-body thead th {
   padding: 0 10px;
@@ -288,9 +301,11 @@
 }
 .content .content_right .content_rightIndex2 div:first-child button.add:hover {
   background-color: rgba(9, 179, 196, 0.61);
+  transition: all 0.3s ease-in-out;
 }
 .content .content_right .content_rightIndex2 div:first-child button.del:hover {
   background-color: rgba(255, 87, 34, 0.79);
+  transition: all 0.3s ease-in-out;
 }
 .content .content_right .content_rightIndex2 .table-main table {
   margin: 20px 50px 0 50px;
@@ -300,6 +315,7 @@
 }
 .content .content_right .content_rightIndex2 .table-main tr:hover {
   background-color: #f2f2f2;
+  transition: all 0.3s ease-in-out;
 }
 .content .content_right .content_rightIndex2 .table-main tr {
   height: 50px;
@@ -346,9 +362,11 @@
 }
 .content .content_right .content_rightIndex3 div:first-child button.add:hover {
   background-color: rgba(9, 179, 196, 0.61);
+  transition: all 0.3s ease-in-out;
 }
 .content .content_right .content_rightIndex3 div:first-child button.del:hover {
   background-color: rgba(255, 87, 34, 0.79);
+  transition: all 0.3s ease-in-out;
 }
 .content .content_right .content_rightIndex3 .table-main table {
   margin: 20px 50px 0 50px;
@@ -358,6 +376,7 @@
 }
 .content .content_right .content_rightIndex3 .table-main tr:hover {
   background-color: #f2f2f2;
+  transition: all 0.3s ease-in-out;
 }
 .content .content_right .content_rightIndex3 .table-main tr {
   height: 50px;
@@ -424,6 +443,7 @@
 .content .content_right .shade_content .shade_contentGoodsTop span:hover {
   background-color: #ba6161;
   color: white;
+  transition: all 0.3s ease-in-out;
 }
 .content .content_right .shade_content .shade_contentGoodsCon {
   padding: 20px;
@@ -466,6 +486,7 @@
 }
 .content .content_right .shade_content .shade_contentGoodsCon div:last-child button:hover {
   background-color: rgba(9, 179, 196, 0.61);
+  transition: all 0.3s ease-in-out;
 }
 .current {
   background-color: #09b3c4;
