@@ -53,6 +53,9 @@ ul{
     color: #777777;
     border-right: none;
 }
+.search input:hover{
+    border-color: rgba(255, 102, 48, 0.51);
+}
 .search button{
     background-color: #fd6633;
     color: white;
@@ -61,25 +64,41 @@ ul{
     height: 40px;
     width: 70px;
     margin-left: -4px;
+    font-size: 14px;
 }
-.search button:active{
+/*.search button*/
+.search button:hover{
     background-color: #f84004;
 }
+
+.collapse ul li a{
+    font-size: 15px;
+}
+.collapse ul li:hover,
+.container a:first-child:hover{
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+
+}
+
 .lunbo{
     margin: 0 auto;
     /*position: absolute;*/
     width: 90%;
 }
+.lunbo img{
+    min-width: 1750px;
+}
 .gongneng{
     /*background-color: pink;*/
     height: 50px;
     margin: 0 auto;
-    /*position: relative;*/
+    position: relative;
 }
 .lunbo_info{
     width: 300px;
     background-color: white;
-    top: 240px;
+    top: 95px;
     position: absolute;
     z-index: 998;
     padding: 20px 20px 0;
@@ -150,10 +169,14 @@ ul{
     height: 281px;
     box-shadow: -2px -2px 4px 2px rgb(237, 237, 239);
     backdrop-filter: blur(4px);
+    transition: all 0.3s ease-in-out;
+
 }
 .function_reser:hover ~ .goods_info ul,
 .goods_info:hover ul{
     display: block;
+    transition: all 0.3s ease-in-out;
+
 }
 .goods_info ul{
     width: 600px;
@@ -185,16 +208,32 @@ ul{
 .m_container{
     margin: 10px auto 20px;
 }
+.m_container .m_con_top h4{
+    cursor:default ;
+}
 .m_con_top{
     height: 80px;
     line-height: 80px;
+}
+.m_con_top .r a:first-child{
+    position: relative;
+}
+.m_con_topAnima{
+    width: 30px;
+    height: 4px;
+    background-color: rgba(255, 97, 16, 0.6);
+    border-radius: 5px;
+    position: absolute;
+    top: 54px;
+    left: 20px;
+    /*display: none;*/
 }
 .m_con_top h4{
     display: inline-block;
 }
 .m_con_top a{
     display: inline-block;
-    margin: 0 20px;
+    padding: 0 20px;
     font-size: 16px;
 }
 .m_con_detail ul{
@@ -207,6 +246,12 @@ ul{
     width: 373px;
     margin-right: 10px;
     margin-top: 10px;
+    box-shadow: 1px 1px 3px 1px rgba(203, 176, 167, 0.34);
+    /*border: 1px solid*/
+}
+.m_con_detail ul li:hover{
+    box-shadow: 1px 6px 8px 6px rgba(203, 176, 167, 0.34);
+    transition: all 0.3s ease-in-out;
 }
 .m_con_detail_img{
     width: 150px;
@@ -348,10 +393,7 @@ ul{
     font-size: 12px;
     color: #666;
 }
-.follow_box, .phone_box{
-    display: none;
-}
-.consult_box {
+.follow_box, .phone_box, .consult_box {
     position: absolute;
     top: 0;
     left: -156px;
@@ -360,17 +402,19 @@ ul{
 }
 .hower_boxa:hover .consult_box{
     display: block;
-    transition: all .3s;
+    transition: all .3s ease-in-out;
 }
 .hower_box:hover .context i{
     color: #ff6630;
-    transition: all .3s;
+    transition: all .3s ease-in-out;
 }
 .hower_box:hover .context span{
     color: #ff6630;
 }
 .hower_box:hover{
     background-color: white;
+    transition: all .3s ease-in-out;
+
 }
 .consult_box .see {
     box-sizing: border-box;
@@ -402,7 +446,7 @@ ul{
 }
 .hower_boxb:hover .follow_box{
     display: block;
-    transition: all .3s;
+    transition: all .3s ease-in-out;
 }
 .phone_box{
     display: none;
@@ -439,9 +483,21 @@ ul{
 }
 .hower_boxc:hover .phone_box{
     display: block;
+    transition: all 0.3s ease-in-out;
 }
-
-
+#topsroll{
+    display: none;
+}
+.abiliAnima{
+    width: 30px;
+    height: 4px;
+    background-color: rgba(255, 97, 16, 0.6);
+    border-radius: 5px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    display: none;
+}
 
 
 

@@ -43,6 +43,7 @@
 .input_user{
     margin: 20px 0;
     height: 57px;
+    position: relative;
 }
 .input_user input{
     height: 100%;
@@ -52,6 +53,20 @@
     padding: 0 3px;
     border: 1px solid #e6e6e6;
     margin-top: 2px;
+}
+.input_user .checked{
+    position: absolute;
+    top: 79px;
+    right: 210px;
+    height: 57px;
+    width: 110px;
+    background-color: #fd6633;
+    text-align: center;
+    color: white;
+    line-height: 57px;
+    cursor: pointer;
+    border: none;
+    z-index: 10;
 }
 .re_main_regist_bot{
     height: 40px;
@@ -93,8 +108,8 @@
 .password_tag_one:before,
 .password_tag:before{
     content: '';
-    width:0px;
-    height:0px;
+    width:0;
+    height:0;
     overflow:hidden;
     border-width:10px;
     border-color:transparent #b86d65 transparent  transparent;

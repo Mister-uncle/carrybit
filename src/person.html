@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/person.css">
+    <link rel="stylesheet" href="public/asserts/vendors/nprogress/nprogress.css">
+    <script src="public/asserts/vendors/nprogress/nprogress.js"></script>
 </head>
 <body>
+<script>NProgress.start()</script>
+
 <!--导航-->
 <div id="page1"></div>
 <!--导航-->
@@ -78,6 +82,7 @@
     $("#page3").load("publicHtml/person_side.html");
     $("#page4").load("publicHtml/footer.html");
 </script>
+<script>NProgress.done()</script>
 
 </body>
 

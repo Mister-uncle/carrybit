@@ -8,9 +8,14 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="public/asserts/vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="public/asserts/vendors/jquery/jquery-ui.min.css">
+
+    <script src="public/asserts/vendors/nprogress/nprogress.js"></script>
+    <link rel="stylesheet" href="public/asserts/vendors/nprogress/nprogress.css">
 
 </head>
 <body>
+<script>NProgress.start()</script>
 <!--导航-->
 <div id="page1"></div>
 <!--导航-->
@@ -70,7 +75,9 @@
                 <i class="fa fa-arrow-up" aria-hidden="true"></i>
                 <span data-v-3c677339="">回顶部</span></div>
         </div>
-        <div data-v-3c677339="" class="hower_box1" style="display: none;"></div>
+        <div data-v-3c677339="" class="hower_box1">
+
+        </div>
     </div>
 </div>
 <!--侧边导航条-->
@@ -81,17 +88,19 @@
     </div>
     <div class="r search">
         <input type="text" value="体检预约" class="searchinput">
-        <button>搜索</button>
+        <button>搜&nbsp;索</button>
     </div>
 </div>
 
 <div class="gongneng w ">
-    <ul>
-        <li><a href="index.html">首页</a></li>
-        <li class="function_reser"><a href="detail.html">预约</a></li>
-        <li><a href="report.html">查看报告</a></li>
-        <li class="mt"><a href="">在线医生</a></li>
-        <li class="mt"><a href="#healthLife">健康生活</a></li>
+    <ul id="abliAnimate">
+        <li class="abliAnimateli"><a href="index.html">首页</a></li>
+        <li class="function_reser abliAnimateli"><a href="detail.html">预约</a></li>
+        <li class="abliAnimateli"><a href="report.html">查看报告</a></li>
+        <li class="mt abliAnimateli"><a href="">在线医生</a></li>
+        <li class="mt abliAnimateli"><a href="#healthLife">健康生活</a></li>
+
+        <div class="abiliAnima"></div>
 
         <div class="goods_info">
             <ul>
@@ -172,29 +181,29 @@
         </div>
     </ul>
     <div class="lunbo_info">
-        <div class="lunbo_infoTita">
-            尊敬的用户 <em>15123359063</em>,
-        </div>
-        <div class="lunbo_infoTitb">
-            <p>您可能需要：</p>
-        </div>
-        <div class="lunbo_infoTar">
-            <ul>
-                <a href="">
-                    <li>
-                    <i class="fa fa-hospital-o" aria-hidden="true"></i>
-                    立即预约 <i class="fa fa-angle-right" aria-hidden="true"></i>
-                </li>
-                </a>
-                <a href="">
-                    <li>
-                        <i class="fa fa-files-o" aria-hidden="true"></i>
-                        查询报告 <i class="fa fa-angle-right" aria-hidden="true"></i>
-                    </li>
-                </a>
-
-
-            </ul>
+        <div>
+            <div class="lunbo_infoTita">
+                尊敬的用户 <em>15123359063</em>,
+            </div>
+            <div class="lunbo_infoTitb">
+                <p>您可能需要：</p>
+            </div>
+            <div class="lunbo_infoTar">
+                <ul>
+                    <a href="">
+                        <li>
+                            <i class="fa fa-hospital-o" aria-hidden="true"></i>
+                            立即预约 <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </li>
+                    </a>
+                    <a href="">
+                        <li>
+                            <i class="fa fa-files-o" aria-hidden="true"></i>
+                            查询报告 <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </li>
+                    </a>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -213,16 +222,16 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img src="images/lunbo1.webp" alt="..." class="img-responsive">
+                <img src="images/lunbo1.webp" alt="..." class="">
             </div>
             <div class="item">
-                <img src="images/lunbo4.webp" alt="..." class="img-responsive">
+                <img src="images/lunbo4.webp" alt="..." class="">
             </div>
             <div class="item">
-                <img src="images/lunbo1.webp" alt="..." class="img-responsive">
+                <img src="images/lunbo1.webp" alt="..." class="">
             </div>
             <div class="item">
-                <img src="images/lunbo4.webp" alt="..." class="img-responsive">
+                <img src="images/lunbo4.webp" alt="..." class="">
             </div>
         </div>
 
@@ -246,14 +255,7 @@
     <div class="m_con_top">
         <h4>健康头条</h4>
         <div class="r">
-            <a href="">养生</a>
-            <a href="">减肥</a>
-            <a href="">美食</a>
-            <a href="">美容</a>
-            <a href="">慢病</a>
-            <a href="">育儿</a>
-            <a href="">情感</a>
-            <a href="">社会</a>
+            <a href="">养生<div class="m_con_topAnima"></div></a><a href="">减肥</a><a href="">美食</a><a href="">美容</a><a href="">慢病</a><a href="">育儿</a><a href="">情感</a><a href="">社会</a>
         </div>
     </div>
     <div class="m_con_detail">
@@ -467,6 +469,7 @@
 <!--footer-->
 
 <script src="js/jquery.min.js"></script>
+<script src="public/asserts/vendors/jquery/jquery-ui.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.singlePageNav.min.js"></script>
 <script src="js/wow.min.js"></script>
@@ -489,6 +492,7 @@
     //     new WOW().init();
     // })
 </script>
+<script>NProgress.done()</script>
 
 </body>
 

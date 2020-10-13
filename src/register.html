@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="public/asserts/vendors/nprogress/nprogress.css">
+    <script src="public/asserts/vendors/nprogress/nprogress.js"></script>
 </head>
 <body>
+<script>NProgress.start()</script>
 
 <div class="top w">
     <div class="top_logo l">
@@ -29,12 +32,18 @@
         </div>
 
             <div class="input_user input_user_one">
-                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-envelope" aria-hidden="true" ></span>
                 <input type="text" placeholder="请输入邮箱" id="eamil">
                 <div class="input_userEmail_tag">邮箱格式不正确</div>
-
+                <button class="checked">获取验证码</button>
             </div>
+
             <div class="input_user input_user_one">
+                <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+                <input type="text" placeholder="请输入邮箱验证码" id="checked">
+                <div class="input_phone_tag">验证码不正确</div>
+            </div>
+            <div class="input_user input_user_one" style="display: none">
                 <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
                 <input type="text" placeholder="请输入手机号" id="phone">
                 <div class="input_phone_tag">手机格式不正确</div>
@@ -42,7 +51,7 @@
             <div class="input_user input_password">
                 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
                 <input type="password" placeholder="请输入密码" id="password">
-                <div class="password_tag_one">密码须包含至少 7 个字符</div>
+                <div class="password_tag_one">密码格式不正确</div>
             </div>
             <div class="input_user input_password_two">
                 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
@@ -56,13 +65,14 @@
                 <a href="">《隐私条款》</a>
             </div>
 
-            <button class="re_regist" >
+            <button class="re_regist" disabled="disabled">
                 立即注册
             </button>
 
 
     </div>
 </div>
+<script>NProgress.done()</script>
 
 </body>
 <script src="js/jquery.min.js"></script>

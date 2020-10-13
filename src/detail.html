@@ -10,8 +10,13 @@
     <link rel="stylesheet" href="css/detail.css">
     <link rel="stylesheet" href="public/asserts/vendors/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="public/asserts/vendors/jquery/jquery-ui.min.css">
+    <link rel="stylesheet" href="public/asserts/vendors/nprogress/nprogress.css">
+    <script src="public/asserts/vendors/nprogress/nprogress.js"></script>
 </head>
 <body>
+<script>
+    NProgress.start()
+</script>
 <!--导航-->
 <div id="page1"></div>
 <!--导航-->
@@ -416,7 +421,9 @@
         $("#page2").load("publicHtml/footer.html");
     })
 </script>
-
+<script>
+    NProgress.done()
+</script>
 </body>
 
 </html>
