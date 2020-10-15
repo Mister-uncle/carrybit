@@ -87,7 +87,8 @@ $(function () {
 
     //添加窗口关闭效果
     let remove = $(".remove");
-    let shadeCon = $(".shade_content");
+    let shadeCon = $(".shade_contentGoods");
+    let windowCon = $(".shade_content")
     let shade = $(".shade");
     let add = $(".add");
     add.on("click",function () {
@@ -95,13 +96,13 @@ $(function () {
     })
     //窗口关闭效果
     remove.on("click",function () {
-        shadeCon.fadeOut();
-        shadeCon.siblings(".shade").fadeOut();
+        windowCon.fadeOut();
+        windowCon.siblings(".shade").fadeOut();
     });
     //点击阴影，窗口关闭
     shade.on("click",function () {
-        shadeCon.fadeOut();
-        shadeCon.siblings(".shade").fadeOut();
+        windowCon.fadeOut();
+        windowCon.siblings(".shade").fadeOut();
     })
     //添加商品窗口
     let addGoods = $(".add_goods");
