@@ -47,7 +47,7 @@ $(function () {
 
     let eamilcheck = function(email){
         let $reg=/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
-
+        console.log(email)
                 if(email.trim().length === 0){
                     eamiltag.css("display","inline-block")
                     eamiltag.html("邮箱不能为空！")
@@ -192,19 +192,23 @@ $(function () {
             eamiltag.html("邮箱不能为空")
         }
 
-    });
-
-    checked.click(function () {
-        if(eamilcheck(eamil)){
+        if(eamilcheck(email)){
             $.ajax({
-                type: 'get',
-                url: 'http://172.27.51.75:81/a/redis?email='+eamil,
+                type: 'post',
+                url: 'http://172.27.51.75:81/api/auth/sendVerification',
+                data:{
+                    type:'email',
+                    value:email
+                },
                 success: function (response) {
-                    console.log(response)
+                    console.log(response.message)
                 }
             })
         }
-    })
+
+    });
+
+
     re_btn.click(function () {
 
         let password = $("#password").val();
@@ -215,8 +219,33 @@ $(function () {
         passwordcheck(password);
         passwordCheckAgin(passwordAgin);
         eamilcheck(eamil);
+
         if(passwordcheck(password) && passwordCheckAgin(passwordAgin) && eamilcheck(eamil)){
+            $.ajax({
+                type: 'post',
+                url: 'http://172.27.51.75:81/api/auth/signup',
+                data:{
+                    accountKey:eamil,
+                    verificationCode:checkedVal,
+                    password:password
+                },
+                success: function (response) {
+                    let backmessage = response.message;
+                    let backStatus = response.status;
+                    // console.log(response.status)
+                    // console.log(response.message)
+                    if(backStatus === 'OK'){
+                        alert("注册成功！")
+                        location.href = "../index.html"
+                    }else {
+                        alert(backmessage)
+                    }
+                }
+            })
         }
+
+
+
         return false
 
     })
